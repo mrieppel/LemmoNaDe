@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sample Proofs</title>
+</head>
+<body>
+<pre>
+Problem: (P > (Q & R)), P ⊢ R
+
+1    (1)  (P > (Q & R))    Premise
+2    (2)  P                Premise
+1,2  (3)  (Q & R)          1,2  >E
+1,2  (4)  R                3  &E
+
+
+Problem: (P > (~Q v R)), P ⊢ (Q>R)
+
+1    (1)  (P > (~Q v R))    Premise
+2    (2)  P                 Premise
+1,2  (3)  (~Q v R)          1,2  >E
+1,2  (4)  (Q > R)           3  SI(Imp)
+
+
+Problem: (P > (~Q v R)), P ⊢ (Q>R)
+
+1        (1)   (P > (~Q v R))    Premise
+2        (2)   P                 Premise
+3        (3)   Q                 Assumption
+4        (4)   ~R                Assumption
+1,2      (5)   (~Q v R)          1,2  >E
+6        (6)   ~Q                Assumption
+3,6      (7)   #                 3,6  ~E
+8        (8)   R                 Assumption
+4,8      (9)   #                 4,8  ~E
+1,2,3,4  (10)  #                 5,6,7,8,9  vE
+1,2,3    (11)  ~~R               4,10  ~I
+1,2,3    (12)  R                 11  DN
+1,2      (13)  (Q > R)           3,12  >I
+
+
+Problem: (Ax)(Fx > Gx), Fa ⊢ (Ex)(~Gx > Hx)
+
+1      (1)   (Ax)(Fx > Gx)     Premise
+2      (2)   Fa                Premise
+3      (3)   ~Ga               Assumption
+1      (4)   (Fa > Ga)         1  AE
+1,2    (5)   Ga                4,2  >E
+1,2,3  (6)   #                 3,5  ~E
+7      (7)   ~Ha               Assumption
+1,2,3  (8)   ~~Ha              7,6  ~I
+1,2,3  (9)   Ha                8  DN
+1,2    (10)  (~Ga > Ha)        3,9  >I
+1,2    (11)  (Ex)(~Gx > Hx)    10  EI
+</pre>
+</body>

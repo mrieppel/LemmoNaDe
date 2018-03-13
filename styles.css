@@ -1,0 +1,194 @@
+/* proof constructor box */
+
+#box {
+min-height:570px;
+height:auto;
+}
+
+/* user menu items */
+
+#menut {
+border-collapse:collapse;
+}
+
+#menut td {
+width:150px;
+border-top:solid 1px black;
+border-right:solid 1px black;
+border-left:solid 1px black;
+padding:5px;
+}
+
+#menut a {
+text-decoration:none;
+}
+
+#menu {
+border:solid 1px black;
+padding:10px;
+margin-bottom:10px;
+}
+
+/* things ending with 'm' are the menu tabs, things ending with 't' are the 
+associated tables (containing the content) */
+
+#appm {
+background:white;
+}
+
+#repm, #expm, #impm, #refm {
+background:#DDDDDD;
+}
+
+#prbt {
+display:block;
+}
+
+#appt,#rept, #expt, #impt, #reft, #SI1, #SI2 {
+display:none;
+}
+
+#importarea {
+font-family:monospace;
+font-weight:normal;
+font-size:medium;
+}
+
+/* Things specifically for the "reference" menu option */
+
+#reft {
+border-collapse:collapse;
+vertical-align:top;
+text-align:left;
+}
+
+#reft>tbody>tr>th {
+text-decoration:underline;
+font-size:large;
+}
+
+#reft a {
+text-decoration:none;	
+}
+
+#sync, #srulc, #qrulc {
+display:none;
+}
+
+
+table.info {
+float:left;
+border-collapse:collapse;
+margin-right:1em;
+margin-bottom:2em;
+}
+
+table.info th {
+text-align:left;
+border: 1px solid black;
+padding: 4px;
+margin:0px;
+}
+
+table.info td {
+font-family:monospace;
+text-align: left;
+border: 1px solid black;
+padding: 4px;
+margin:0px;
+}
+
+table.rulcont {
+border-collapse:collapse;
+margin-bottom:1em;
+}
+
+td.brd {
+vertical-align:top;
+border:solid 1px black;
+width:320px;
+}
+
+table.rule th {
+text-align:left;
+}
+
+table.rule {
+width:100%;
+}
+
+table.rule td {
+font-family:monospace;
+text-align: left;
+padding: 4px;
+margin:0px;
+}
+
+
+/* Output area */
+
+#outputtable { // contains the derivation cell and error cell
+height:100px;
+width:100%;
+border-collapse:collapse;
+}
+
+#drvdcell{
+width:66%;
+}
+
+#errordcell {
+width:32%;
+vertical-align:top;
+}
+
+#outputtable_sepcell {
+width:1%;
+}
+
+#drvd {
+padding:2px;
+min-height:100px;
+font-family:monospace;
+border:solid 1px #B4BAEA;
+background-color:#F0F4FF;
+}
+
+/* styling for the cells of the actual proof table */
+
+td.depc {
+padding-right:20px;
+}
+
+td.cntc {
+padding-right:5px;
+}
+
+td.frmc {
+padding-right:30px;
+}
+
+
+/* error console */
+
+#errord {
+padding:2px;
+min-height:100px;
+font-family:monospace;
+border:solid 1px #B4BAEA;
+background-color:#F0F4FF;
+}
+
+/* footer */
+
+#footer {
+margin-left:auto;
+margin-right:auto;
+margin-top:10px;
+margin-bottom:10px;
+width:100%;
+text-align:center;
+color:#A0A0A0;
+font-family:arial, sans-serif;
+font-size:9pt;
+}
